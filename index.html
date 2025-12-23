@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard</title>
+
+  <!-- Google Font (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar navigation">
+      <div class="brand">
+        <span class="icon" aria-hidden="true">
+          <!-- view-dashboard -->
+          <svg viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"/></svg>
+        </span>
+        <span class="brand__text">Dashboard</span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__item active" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/></svg></span>
+          Home
+        </a>
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16H18C16.71,17.92 14.5,19.2 12,19.2M12,4.8C14.5,4.8 16.71,6.08 18,8H6C7.29,6.08 9.5,4.8 12,4.8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg></span>
+          Profile
+        </a>
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z"/></svg></span>
+          Messages
+        </a>
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12,16A2,2 0 0,1 10,14A2,2 0 0,1 12,12A2,2 0 0,1 14,14A2,2 0 0,1 12,16M19.43,12.98C19.47,12.66 19.5,12.34 19.5,12C19.5,11.66 19.47,11.34 19.43,11.02L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.28,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.72,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11.02C4.53,11.34 4.5,11.66 4.5,12C4.5,12.34 4.53,12.66 4.57,12.98L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.72,19.04 4.95,18.95L7.44,17.95C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.68 16.04,18.34 16.56,17.95L19.05,18.95C19.28,19.04 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.98Z"/></svg></span>
+          Settings
+        </a>
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15,13V11H7V13H15M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,11V13H19V11H17M17,7V9H19V7H17M7,7V9H15V7H7Z"/></svg></span>
+          Tasks
+        </a>
+      </nav>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <nav class="nav" aria-label="Secondary">
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17,18A2,2 0 0,0 19,16V8A2,2 0 0,0 17,6H7A2,2 0 0,0 5,8V16A2,2 0 0,0 7,18H2V20H22V18H17M7,8H17V16H7V8Z"/></svg></span>
+          Support
+        </a>
+        <a class="nav__item" href="#">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M11,6H13V14H11V6M11,16H13V18H11V16Z"/></svg></span>
+          Privacy
+        </a>
+      </nav>
+    </aside>
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="topbar__search">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5A4.5,4.5 0 0,0 5,9.5A4.5,4.5 0 0,0 9.5,14A4.5,4.5 0 0,0 14,9.5A4.5,4.5 0 0,0 9.5,5Z"/></svg>
+        </button>
+        <label class="sr-only" for="search">Search</label>
+        <input id="search" type="search" placeholder="Search…" />
+      </div>
+
+      <div class="topbar__quick">
+        <button class="icon-btn" type="button" aria-label="Notifications">
+          <svg viewBox="0 0 24 24"><path d="M12,22A2,2 0 0,0 14,20H10A2,2 0 0,0 12,22M18,16V11C18,7.93 16.36,5.36 13.5,4.68V4A1.5,1.5 0 0,0 12,2.5A1.5,1.5 0 0,0 10.5,4V4.68C7.64,5.36 6,7.93 6,11V16L4,18V19H20V18L18,16Z"/></svg>
+        </button>
+        <div class="avatar" aria-hidden="true">GJ</div>
+        <div class="topbar__name">
+          <div class="muted">Signed in as</div>
+          <div class="strong">Gajee</div>
+        </div>
+      </div>
+
+      <div class="topbar__welcome">
+        <div class="avatar avatar--lg" aria-hidden="true">GJ</div>
+        <div>
+          <div class="muted">Hi there,</div>
+          <div class="welcome__name">Gajee <span class="muted">(@gajee)</span></div>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="btn" type="button">New</button>
+        <button class="btn" type="button">Upload</button>
+        <button class="btn" type="button">Share</button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <section class="projects" aria-label="Projects">
+        <div class="section-head">
+          <h2>Your Projects</h2>
+          <button class="ghost" type="button">View all</button>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__stripe"></div>
+            <div class="card__body">
+              <h3>Super Cool Project</h3>
+              <p>Build a clean dashboard layout using nested CSS grid containers.</p>
+              <div class="card__actions">
+                <button class="icon-btn" type="button" aria-label="Star"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Watch"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Fork"><svg viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V7A2,2 0 0,0 5,8.72V21H7V8.72A2,2 0 0,0 8,7V4A2,2 0 0,0 6,2M6,4H6V7H6M18,2A2,2 0 0,0 16,4V7A2,2 0 0,0 17,8.72V13.5A2.5,2.5 0 0,1 14.5,16H13.5A2.5,2.5 0 0,1 11,13.5V8.72A2,2 0 0,0 12,7V4A2,2 0 0,0 10,2A2,2 0 0,0 8,4V7A2,2 0 0,0 9,8.72V13.5A4.5,4.5 0 0,0 13.5,18H14.5A4.5,4.5 0 0,0 19,13.5V8.72A2,2 0 0,0 20,7V4A2,2 0 0,0 18,2M10,4H10V7H10M18,4H18V7H18Z"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__stripe"></div>
+            <div class="card__body">
+              <h3>Less Cool Project</h3>
+              <p>Practice flexible track sizing with <code>fr</code> units and min/max.</p>
+              <div class="card__actions">
+                <button class="icon-btn" type="button" aria-label="Star"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Watch"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Fork"><svg viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V7A2,2 0 0,0 5,8.72V21H7V8.72A2,2 0 0,0 8,7V4A2,2 0 0,0 6,2M6,4H6V7H6M18,2A2,2 0 0,0 16,4V7A2,2 0 0,0 17,8.72V13.5A2.5,2.5 0 0,1 14.5,16H13.5A2.5,2.5 0 0,1 11,13.5V8.72A2,2 0 0,0 12,7V4A2,2 0 0,0 10,2A2,2 0 0,0 8,4V7A2,2 0 0,0 9,8.72V13.5A4.5,4.5 0 0,0 13.5,18H14.5A4.5,4.5 0 0,0 19,13.5V8.72A2,2 0 0,0 20,7V4A2,2 0 0,0 18,2M10,4H10V7H10M18,4H18V7H18Z"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__stripe"></div>
+            <div class="card__body">
+              <h3>Impossible App</h3>
+              <p>Use consistent spacing, typography, and subtle shadows for depth.</p>
+              <div class="card__actions">
+                <button class="icon-btn" type="button" aria-label="Star"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Watch"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Fork"><svg viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V7A2,2 0 0,0 5,8.72V21H7V8.72A2,2 0 0,0 8,7V4A2,2 0 0,0 6,2M6,4H6V7H6M18,2A2,2 0 0,0 16,4V7A2,2 0 0,0 17,8.72V13.5A2.5,2.5 0 0,1 14.5,16H13.5A2.5,2.5 0 0,1 11,13.5V8.72A2,2 0 0,0 12,7V4A2,2 0 0,0 10,2A2,2 0 0,0 8,4V7A2,2 0 0,0 9,8.72V13.5A4.5,4.5 0 0,0 13.5,18H14.5A4.5,4.5 0 0,0 19,13.5V8.72A2,2 0 0,0 20,7V4A2,2 0 0,0 18,2M10,4H10V7H10M18,4H18V7H18Z"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__stripe"></div>
+            <div class="card__body">
+              <h3>Easy Peasy</h3>
+              <p>Cards auto-wrap using <code>repeat(auto-fit, minmax())</code>.</p>
+              <div class="card__actions">
+                <button class="icon-btn" type="button" aria-label="Star"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Watch"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Fork"><svg viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V7A2,2 0 0,0 5,8.72V21H7V8.72A2,2 0 0,0 8,7V4A2,2 0 0,0 6,2M6,4H6V7H6M18,2A2,2 0 0,0 16,4V7A2,2 0 0,0 17,8.72V13.5A2.5,2.5 0 0,1 14.5,16H13.5A2.5,2.5 0 0,1 11,13.5V8.72A2,2 0 0,0 12,7V4A2,2 0 0,0 10,2A2,2 0 0,0 8,4V7A2,2 0 0,0 9,8.72V13.5A4.5,4.5 0 0,0 13.5,18H14.5A4.5,4.5 0 0,0 19,13.5V8.72A2,2 0 0,0 20,7V4A2,2 0 0,0 18,2M10,4H10V7H10M18,4H18V7H18Z"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__stripe"></div>
+            <div class="card__body">
+              <h3>Grid Wizardry</h3>
+              <p>Header and content areas use separate nested grids.</p>
+              <div class="card__actions">
+                <button class="icon-btn" type="button" aria-label="Star"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Watch"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg></button>
+                <button class="icon-btn" type="button" aria-label="Fork"><svg viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V7A2,2 0 0,0 5,8.72V21H7V8.72A2,2 0 0,0 8,7V4A2,2 0 0,0 6,2M6,4H6V7H6M18,2A2,2 0 0,0 16,4V7A2,2 0 0,0 17,8.72V13.5A2.5,2.5 0 0,1 14.5,16H13.5A2.5,2.5 0 0,1 11,13.5V8.72A2,2 0 0,0 12,7V4A2,2 0 0,0 10,2A2,2 0 0,0 8,4V7A2,2 0 0,0 9,8.72V13.5A4.5,4.5 0 0,0 13.5,18H14.5A4.5,4.5 0 0,0 19,13.5V8.72A2,2 0 0,0 20,7V4A2,2 0 0,0 18,2M10,4H10V7H10M18,4H18V7H18Z"/></svg></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="side" aria-label="Updates">
+        <section class="panel" aria-label="Announcements">
+          <div class="section-head section-head--tight">
+            <h2>Announcements</h2>
+          </div>
+          <div class="panel__list">
+            <article class="note">
+              <h3>Site Maintenance</h3>
+              <p>Scheduled maintenance on Saturday, 2:00–4:00 AM.</p>
+            </article>
+            <article class="note">
+              <h3>Community Share Day</h3>
+              <p>Show off your projects and get feedback in the forum.</p>
+            </article>
+            <article class="note">
+              <h3>Updated Privacy Policy</h3>
+              <p>We clarified what we collect and how you can opt out.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" aria-label="Trending">
+          <div class="section-head section-head--tight">
+            <h2>Trending</h2>
+          </div>
+          <div class="trending">
+            <a class="trend" href="#">
+              <div class="avatar avatar--sm" aria-hidden="true">AP</div>
+              <div>
+                <div class="strong">@app-pro</div>
+                <div class="muted">Dashboard polish tips</div>
+              </div>
+            </a>
+            <a class="trend" href="#">
+              <div class="avatar avatar--sm" aria-hidden="true">TS</div>
+              <div>
+                <div class="strong">@tiny-sass</div>
+                <div class="muted">Grid patterns library</div>
+              </div>
+            </a>
+            <a class="trend" href="#">
+              <div class="avatar avatar--sm" aria-hidden="true">UI</div>
+              <div>
+                <div class="strong">@ui-crafter</div>
+                <div class="muted">Accessible buttons</div>
+              </div>
+            </a>
+            <a class="trend" href="#">
+              <div class="avatar avatar--sm" aria-hidden="true">DN</div>
+              <div>
+                <div class="strong">@dev-notes</div>
+                <div class="muted">CSS spacing rules</div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
